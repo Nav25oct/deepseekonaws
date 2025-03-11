@@ -59,8 +59,8 @@ session = boto3.Session(profile_name="bedrock")
 # Create the Bedrock Runtime client
 bedrock_runtime = session.client("bedrock-runtime", region_name="us-east-1")
 
-# Inference Profile ARN for DeepSeek-R1
-inference_profile_arn = "arn:aws:bedrock:us-east-1:307698253033:inference-profile/us.deepseek.r1-v1:0"
+# Inference Profile ARN for DeepSeek-R1 ( Repace with your Inference ARN )
+inference_profile_arn = "arn:aws:bedrock:us-east-1:<awsaccount>:inference-profile/us.deepseek.r1-v1:0"
 
 # Define the prompt
 prompt = "Describe the purpose of a 'hello world' program in one line."
